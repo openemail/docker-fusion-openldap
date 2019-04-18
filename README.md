@@ -1,10 +1,18 @@
-# tiredofit/openldap-fusiondirectory
+# Table of Contents
 
-[![Build Status](https://img.shields.io/docker/build/tiredofit/openldap-fusiondirectory.svg)](https://hub.docker.com/r/tiredofit/openldap-fusiondirectory)
-[![Docker Pulls](https://img.shields.io/docker/pulls/tiredofit/openldap-fusiondirectory.svg)](https://hub.docker.com/r/tiredofit/openldap-fusiondirectory)
-[![Docker Stars](https://img.shields.io/docker/stars/tiredofit/openldap-fusiondirectory.svg)](https://hub.docker.com/r/tiredofit/openldap-fusiondirectory)
-[![Docker 
-Layers](https://images.microbadger.com/badges/image/tiredofit/openldap-fusiondirectory.svg)](https://microbadger.com/images/tiredofit/openldap-fusiondirectory)
+- [Introduction](#introduction)
+- [Prerequisites](#prerequisites)
+- [Dependencies](#dependendcies)
+- [Installation](#installation)
+- [Quick Start](#quick-start)
+- [Configuration](#configuration)
+    - [Data Volumes](#data-volumes)
+    - [Database](#database)
+    - [Environment Variables](#environmentvariables)   
+    - [Networking](#networking)
+- [Maintenance](#maintenance)
+    - [Shell Access](#shell-access)
+- [References](#references)
 
 # Introduction
 
@@ -20,25 +28,6 @@ This Container uses [tiredofit/openldap](https://github.com/tiredofit/docker-ope
 
 - [Dave Conroy](daveconroy@tiredofit.ca)
 
-# Table of Contents
-
-- [Introduction](#introduction)
-    - [Changelog](Changelog.md)
-- [Prerequisites](#prerequisites)
-- [Dependencies](#dependendcies)
-- [Installation](#installation)
-- [Quick Start](#quick-start)
-- [Configuration](#configuration)
-    - [Data Volumes](#data-volumes)
-    - [Database](#database)
-    - [Environment Variables](#environmentvariables)   
-    - [Networking](#networking)
-- [Maintenance](#maintenance)
-    - [Shell Access](#shell-access)
-- [References](#references)
-
-
-
 # Dependencies
 
 To build this image you must have the [OpenLDAP Image](https://github.com/tiredofit/docker-openldap) built and available. To utilize, you must also have the [Fusion Directory Image](https://github.com/tiredofit/docker-fusiondirectory) image built and available.
@@ -51,8 +40,6 @@ Automated builds of the image are available on [Registry](https://hub.docker.com
 ```bash
 docker pull tiredofit/openldap-fusiondirectory
 ```
-
-
 # Quick Start
 
 * The quickest way to get started is using [docker-compose](https://docs.docker.com/compose/). See the examples folder for a working [docker-compose.yml](examples/docker-compose.yml) that can be modified for development or production use.
